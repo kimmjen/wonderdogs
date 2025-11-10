@@ -27,14 +27,14 @@ function Players() {
       {/* 코칭스태프 */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-wonderdogs-dark">
-            👔 코칭스태프
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            코칭스태프
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {staff.coaches.map((coach, idx) => (
               <Card key={idx} className="p-6">
                 <Badge variant="accent" className="mb-3">{coach.role}</Badge>
-                <h3 className="text-xl font-bold mb-2">{coach.name}</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{coach.name}</h3>
                 {coach.birth && (
                   <p className="text-sm text-gray-600 mb-2">
                     {coach.birth} {coach.height && `| ${coach.height}`}
@@ -57,8 +57,8 @@ function Players() {
       {positions.map((pos) => (
         <section key={pos.key} className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8 text-wonderdogs-dark">
-              {pos.icon} {pos.name}
+            <h2 className="text-3xl font-bold mb-8 text-gray-900">
+              {pos.name}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {playersByPosition[pos.key].map((player) => (
@@ -72,8 +72,8 @@ function Players() {
       {/* 지원 스태프 */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-wonderdogs-dark">
-            🤝 지원 스태프
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            지원 스태프
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {staff.support.map((person, idx) => (
@@ -81,7 +81,7 @@ function Players() {
                 <Badge variant="primary" size="sm" className="mb-2">
                   {person.role}
                 </Badge>
-                <h4 className="font-bold">{person.name}</h4>
+                <h4 className="font-bold text-gray-900">{person.name}</h4>
                 {person.career && (
                   <p className="text-xs text-gray-600 mt-1 truncate">
                     {person.career[0]}

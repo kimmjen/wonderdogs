@@ -1,8 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from '../common'
+import { useTheme } from '../../context/ThemeContext'
 
 const Header = () => {
   const location = useLocation()
+  const { theme, toggleTheme } = useTheme()
   
   const navItems = [
     { path: '/', label: '홈' },
@@ -41,8 +43,15 @@ const Header = () => {
             ))}
           </nav>
           
-          {/* CTA 버튼 */}
-          <div className="hidden md:block">
+          {/* 테마 토글 & CTA 버튼 */}
+          <div className="hidden md:flex items-center gap-3">
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg bg-white/20 hover:bg-white/30 transition-colors"
+              aria-label="테마 변경"
+            >
+              {theme === 'light' ? '🌙' : '☀️'}
+            </button>
             <Button variant="accent" size="sm">
               팬 가입
             </Button>

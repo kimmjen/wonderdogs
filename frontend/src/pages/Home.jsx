@@ -26,7 +26,7 @@ function Home() {
       {/* 최근 경기 결과 */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-wonderdogs-dark">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             최근 경기 결과
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -34,21 +34,21 @@ function Home() {
               <div className="text-center">
                 <div className="text-sm text-gray-500 mb-2">2024.11.05</div>
                 <div className="text-2xl font-bold text-wonderdogs-primary mb-4">승리</div>
-                <div className="text-xl font-semibold">원더독스 3 - 1 상대팀</div>
+                <div className="text-xl font-semibold text-gray-800">원더독스 3 - 1 상대팀</div>
               </div>
             </Card>
             <Card className="p-6">
               <div className="text-center">
                 <div className="text-sm text-gray-500 mb-2">2024.11.03</div>
                 <div className="text-2xl font-bold text-wonderdogs-primary mb-4">승리</div>
-                <div className="text-xl font-semibold">원더독스 3 - 2 상대팀</div>
+                <div className="text-xl font-semibold text-gray-800">원더독스 3 - 2 상대팀</div>
               </div>
             </Card>
             <Card className="p-6">
               <div className="text-center">
                 <div className="text-sm text-gray-500 mb-2">2024.11.01</div>
                 <div className="text-2xl font-bold text-red-500 mb-4">패배</div>
-                <div className="text-xl font-semibold">원더독스 1 - 3 상대팀</div>
+                <div className="text-xl font-semibold text-gray-800">원더독스 1 - 3 상대팀</div>
               </div>
             </Card>
           </div>
@@ -58,7 +58,7 @@ function Home() {
       {/* 팀 통계 */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-wonderdogs-dark">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             시즌 통계
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

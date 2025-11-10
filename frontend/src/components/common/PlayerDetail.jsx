@@ -175,7 +175,7 @@ const PlayerDetail = ({ player }) => {
           <div className="text-5xl font-bold text-wonderdogs-primary mb-2">
             #{number}
           </div>
-          <h1 className="text-3xl font-bold mb-3">{name}</h1>
+          <h1 className="text-3xl font-bold mb-3 text-gray-900">{name}</h1>
           <Badge variant="primary" size="lg" className="mb-4">
             {positionNames[position] || position}
           </Badge>

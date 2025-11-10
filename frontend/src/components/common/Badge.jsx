@@ -11,7 +11,7 @@ const Badge = ({
     secondary: 'bg-wonderdogs-secondary text-white',
     accent: 'bg-wonderdogs-accent text-wonderdogs-dark',
     success: 'bg-green-500 text-white',
-    warning: 'bg-yellow-500 text-white',
+    warning: 'bg-yellow-500 text-gray-900',
     danger: 'bg-red-500 text-white',
   }
   
